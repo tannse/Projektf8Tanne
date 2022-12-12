@@ -134,13 +134,22 @@ a {
 }
 .client .desc-row {
     margin-top: 16px;
+}
+.client .desc-row p {
     font-style: Medium;
     font-size: 1.6rem;
     line-height: 1.25;
     color: #7d8589;
 }
 .client .logo-row {
-    margin-top: 96px;
+    margin-top: 70px;
+}
+.client .logo-row a {
+    padding: 31px 41px 22px;
+    border-radius: 20px;
+}
+.client .logo-row a:hover {
+    box-shadow: 0px 10px 20px 0px #0000001a;
 }
 /* ---------- Guides----------- */
 .guides {
