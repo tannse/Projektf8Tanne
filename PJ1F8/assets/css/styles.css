@@ -525,17 +525,23 @@ footer .desc {
     line-height: 1.75;
 }
 .footer .social {
+    display: flex;
     margin-top: 40px;
 }
 .footer .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 28px;
     height: 28px;
-    gap: 50px;
+    border-radius: 3px;
+    background: #f9f9f9;
+}
+.footer .social-link + .social-link {
     margin-left: 16px;
 }
-
-.footer .icon:first-child {
-    margin-left: 0;
+.footer .social-link:hover {
+    background-color: #ebebeb;
 }
 .footer-second {
     display: flex;
