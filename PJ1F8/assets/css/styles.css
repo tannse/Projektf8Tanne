@@ -8,14 +8,12 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
-main {
-    width: 1440px;
-    height: 5000px;
-}
 .header {
-    position: relative;
-    height: 100vh;
-    background-color: #e6f0ff;
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 /* common */
 .line-clamp {
@@ -52,10 +50,11 @@ a {
     margin-right: auto;
 }
 /* ---------- Header----------- */
+
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 .navbar ul {
     display: flex;
@@ -86,26 +85,32 @@ a {
     margin-left: 18px;
 }
 /* ---------- Hero----------- */
-.hero-bar {
-    margin-top: 130px;
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+    background-color: #e6f0ff;
 }
-.hero-bar .info {
+.hero-wrap .info {
     width: 51%;
 }
-.hero-bar .sub-title {
+.hero {
+    margin-top: 130px;
+}
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
     letter-spacing: 0.01em;
     color: #687690;
 }
-.hero-bar .title {
+.hero-wrap .title {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
     color: #000336;
 }
-.hero-bar .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
